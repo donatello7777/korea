@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 스프링에서 지원 -->
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mbc.left4dead.Service"><!-- 마이바티스에서 Java인터페이스와 SQL구문을 매핑하는데 사용함 -->
+ <insert id="insertm"><!-- id는? 함수명의 이름 -->
+ insert into score0317 values(#{param1},#{param2},#{param3},#{param4},#{param5})<!-- param식 -->
+ </insert>
+ 
+ <select id="out2" resultType="com.mbc.left4dead.ScoreDTO">
+ select * from score0317
+ </select>
+</mapper>
